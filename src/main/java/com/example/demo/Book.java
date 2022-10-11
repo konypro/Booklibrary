@@ -1,10 +1,10 @@
 package com.example.demo;
 
-public record Books(
+public record Book(
         String title,
-        String autore,
+        String author,
         String name,
-        String typ,
+        String type,
         String isbn
 
 ) {

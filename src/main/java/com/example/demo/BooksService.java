@@ -1,7 +1,9 @@
 package com.example.demo;
 
-import java.util.List;
+import org.springframework.stereotype.Service;
 
+import java.util.List;
+@Service
 public class BooksService {
 
     private final BookRepo bookRepo;
@@ -9,7 +11,7 @@ public class BooksService {
     public BooksService(BookRepo bookRepo) {
         this.bookRepo = bookRepo;
     }
-    public List<Books> getBooks (){
+    public List<Book> getBooks (){
         return bookRepo.getBooksList();
     }
 
